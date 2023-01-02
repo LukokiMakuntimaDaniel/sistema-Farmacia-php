@@ -1,0 +1,78 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Fonts Pre Connect -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- Meta Tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/signin.css">
+  <link href="CSS/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/offcanvas.css">
+  <link rel="stylesheet" href="CSS/bootstrap.css">
+  <link rel="stylesheet" href="CSS/custumer.css">
+  <link rel="stylesheet" href="CSS/all.css">
+  <!-- Fonts Links (Roboto 400, 500 and 700 included) -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+
+  <!-- CSS Files Links -->
+  <link rel="stylesheet" href="./styles.css">
+
+  <!-- Title -->
+  <title>Simple Page</title>
+</head>
+<body>
+    <div class="" id="" tabindex="-1" aria-labelledby="" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="">Cadastramento de Usuário</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form method="post" action="../php/salvarUsuario.php" enctype="multipart/form-data">
+                         <input style="display:none"  class="form-control" name="modo" type="text" id="moda">
+                        <div class="mb-3" id="meuId"  style="display:none">
+                            <label for="formFile" class="form-label">Id do usuario</label>
+                            <input readonly class="form-control" name="id" type="text" id="ids">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="formFile" class="form-label">Nome do Usúario</label>
+                            <input class="form-control" type="text" id="nomeUsuario" name="nomeUsuario">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="formFileMultiple" class="form-label">Categoria do Usuário</label>
+                            <select id="select"  name="categoria" class="form-select" aria-label="Default select example">
+                                <option selected>Selecina uma Categoria</option>
+                                <option value="Administrador">Administrador</option>
+                                <option value="Vendedor">Vendedor</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="formFileDisabled" class="form-label">Palavra-Passe</label>
+                            <input class="form-control" id="pass" name="senha" type="password" id="formFileMultiple">
+                        </div>
+                        <div class="mb-3">
+                            <label for="formFileDisabled" class="form-label">Telefone</label>
+                            <input class="form-control" id="tel" name="telefone" type="number" id="formFileMultiple">
+                        </div>
+                        <div id="filess">
+                            <label for="formFileLg" class="form-label">Imagem do usuario</label>
+                            <input class="form-control form-control-lg" id="formFileLg" type="file">
+                        </div>
+                        <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-primary" id="salvar">Salvar</button>
+                </div>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

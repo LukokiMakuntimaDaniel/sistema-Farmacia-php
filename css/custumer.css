@@ -1,0 +1,109 @@
+.Custumecenter {
+    text-align: center;
+}
+
+.bodyCustumer {
+    color: #333;
+    background: linear-gradient(to left, #42e695 0%, #3bb2b8 100%);
+}
+
+.custumerForm {
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.custumeBtn {
+    border-radius: .5rem;
+    background: linear-gradient(to left, #42e695 0%, #3bb2b8 100%);
+}
+
+.custumeBtn:hover {
+    border-radius: .5rem;
+    background: linear-gradient(to left, #3bb2b8 0%, #42e695 100%);
+}
+
+.addopc {
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    right: 0%;
+    padding: 30px;
+}
+
+.adddiv button {
+    background-color: #009966;
+    color: #ddd;
+    font-size: 2rem;
+    border: none;
+    float: right;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.3s;
+    animation: pulsante 1s infinite;
+}
+
+@keyframes pulsante {
+    0% {
+        border: 2px solid #009966;
+    }
+    100% {
+        box-shadow: #88e4c585 0 0 0 16px;
+    }
+}
+
+#myInput {
+    background-image: url('../IMG/icons8_search_30px.png');
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+}
+
+#myTable {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ddd;
+    font-size: 18px;
+}
+
+#myTable th,
+#myTable td {
+    text-align: left;
+    /* Left-align text */
+    padding: 12px;
+    /* Add padding */
+}
+
+#myTable tr {
+    /* Add a bottom border to all table rows */
+    border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header,
+#myTable tr:hover {
+    /* Add a grey background color to the table header and on hover */
+    background-color: #f1f1f1;
+}
+
+
+/**fim Table */
+
+.iconDetalhe {
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #3366ff;
+}
+
+.eliminar {
+    background-color: #ff0033;
+}
